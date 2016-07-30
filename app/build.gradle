@@ -1,5 +1,16 @@
+buildscript {
+    ext.kotlin_version = '1.0.2-1'
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 24
@@ -22,21 +33,27 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
-    dexOptions {
-        incremental true
-    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'com.android.support:design:24.0.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha3'
-    compile 'com.android.support:support-v4:24.0.0'
-    compile 'com.android.support:support-vector-drawable:24.0.0'
+
+
+    compile 'com.google.android.gms:play-services-auth:9.2.1'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
+    compile 'com.android.support:support-v4:24.1.1'
+    compile 'com.android.support:support-vector-drawable:24.1.1'
+    compile 'com.google.firebase:firebase-auth:9.2.1'
+    compile 'com.google.android.gms:play-services-auth:9.2.1'
+    compile 'com.github.paolorotolo:appintro:4.0.0'
     testCompile 'junit:junit:4.12'
 }
 repositories {
     mavenCentral()
 }
+
+// Firebase
+apply plugin: 'com.google.gms.google-services'

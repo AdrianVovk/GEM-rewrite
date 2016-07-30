@@ -10,11 +10,13 @@ import android.transition.Transition
 import android.util.Log
 import android.util.TypedValue
 import android.view.*
+import substance.mobile.gem.GEMApp
 import substance.mobile.gem.R
 
 abstract class GEMActivity : AppCompatActivity() {
 
     open val TAG = this.javaClass.simpleName
+    val application: GEMApp by lazy { getApplication() as GEMApp }
 
     ///////////////////////////////////////////////////////////////////////////
     // Layout

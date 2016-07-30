@@ -1,0 +1,94 @@
+{
+  "project_info": {
+    "project_number": "118116972306",
+    "firebase_url": "https://gem-player.firebaseio.com",
+    "project_id": "gem-player",
+    "storage_bucket": "gem-player.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118116972306:android:849a49e1a74aa147",
+        "android_client_info": {
+          "package_name": "com.animbus.music"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118116972306-0gp20s79g3nr2hoq5sdjkri7q84gakaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.animbus.music",
+            "certificate_hash": "1357A79009441149390CA7D73ED33471CAAA660B"
+          }
+        },
+        {
+          "client_id": "118116972306-6cdvei1i20ckbcvrp80uhn6lk8dnu0jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5c47PhIJgC9ErGJtEpHdsvSJU11i4yDQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118116972306:android:19202cff6d6d7f9a",
+        "android_client_info": {
+          "package_name": "substance.mobile.gem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118116972306-n5j7p4cn0ku2upt0h84vh8fdn8uigp0b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "substance.mobile.gem",
+            "certificate_hash": "A661D0A4E5629AC743E6E6CBD04BF4C69B79B5E6"
+          }
+        },
+        {
+          "client_id": "118116972306-6cdvei1i20ckbcvrp80uhn6lk8dnu0jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5c47PhIJgC9ErGJtEpHdsvSJU11i4yDQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118116972306-6cdvei1i20ckbcvrp80uhn6lk8dnu0jb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
