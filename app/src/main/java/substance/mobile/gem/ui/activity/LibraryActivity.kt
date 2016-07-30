@@ -1,33 +1,22 @@
 package substance.mobile.gem.ui.activity
 
 import android.content.Context
-import android.content.DialogInterface
 import android.content.Intent
-import android.net.Uri
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
-import android.util.Log
 import android.view.KeyEvent
 import android.view.MenuItem
-import android.webkit.URLUtil
 import android.widget.Toast
 import com.google.android.gms.auth.api.Auth
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.Scopes
-import com.google.android.gms.common.api.GoogleApiClient
-import com.google.android.gms.common.api.Scope
-import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.UserProfileChangeRequest
+import kotlinx.android.synthetic.main.activity_library.*
+import kotlinx.android.synthetic.main.nav_header_library.*
 import substance.mobile.gem.R
 import substance.mobile.gem.ui.custom.GEMActivity
 import substance.mobile.gem.util.NowPlayingUtil
-import kotlinx.android.synthetic.main.activity_library.*
-import kotlinx.android.synthetic.main.nav_header_library.*
-import substance.mobile.gem.GEMApp
-import java.net.URL
 
 class LibraryActivity : GEMActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -47,14 +36,14 @@ class LibraryActivity : GEMActivity(), NavigationView.OnNavigationItemSelectedLi
         }
     }
 
-    override fun getLayout() = R.layout.activity_library
+    override fun getLayout() = R.layout.fragment_sign_in
 
     override fun setup() {
-        val toggle = ActionBarDrawerToggle(
-                this, drawerContainer, toolbar, R.string.accessibility_open_drawer, R.string.accessibility_close_drawer)
-        drawerContainer.addDrawerListener(toggle)
-        toggle.syncState()
-        appDrawer.setNavigationItemSelectedListener(this)
+        //val toggle = ActionBarDrawerToggle(
+        //        this, drawerContainer, toolbar, R.string.accessibility_open_drawer, R.string.accessibility_close_drawer)
+        //drawerContainer.addDrawerListener(toggle)
+        //toggle.syncState()
+        //appDrawer.setNavigationItemSelectedListener(this)
         //NowPlayingUtil.doInitialConfig(findViewById(R.id.constraintLayout))
     }
 
@@ -70,11 +59,11 @@ class LibraryActivity : GEMActivity(), NavigationView.OnNavigationItemSelectedLi
         }
         signOut.setOnClickListener {
             auth.signOut()
-            Auth.GoogleSignInApi.signOut(apiClient)
+            //Auth.GoogleSignInApi.signOut(apiClient)
         }
 
         google_auth.setOnClickListener {
-            startActivityForResult(Auth.GoogleSignInApi.getSignInIntent(apiClient), 100)
+            //startActivityForResult(Auth.GoogleSignInApi.getSignInIntent(apiClient), 100)
         }
     }
 
@@ -117,7 +106,7 @@ class LibraryActivity : GEMActivity(), NavigationView.OnNavigationItemSelectedLi
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean = when (item.itemId) {
-        //TODO
+    //TODO
         else -> true
     }
 
