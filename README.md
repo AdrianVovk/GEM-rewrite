@@ -1,5 +1,5 @@
-#GEM Player (Beta)
-Made for [Substance Mobile](https://substanceproject.net
+#GEM Player (WIP) (REWRITE)
+Made for [Substance Mobile](https://substanceproject.net)  
 App Manager: Adrian Vovk (@AnimbusDev)
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-GEM%20Player-brightgreen.svg?style=flat)](http://android-arsenal.com/details/3/2679)
@@ -7,7 +7,7 @@ App Manager: Adrian Vovk (@AnimbusDev)
 [![Stable Version](https://img.shields.io/badge/stable-0.2.3-orange.svg)](https://github.com/Substance-Project/GEM/tree/stable)
 [![WIP Version](https://img.shields.io/badge/indev-0.3.0-yellow.svg)](https://github.com/Substance-Project/GEM/releases)
 
-GEM Player is a part of the Substance Mobile suite of apps & promises to be nimble, functional, and customizable.
+GEM Player is a part of the Substance Mobile suite of apps & promises to be nimble, functional, and customizable.  
 It is largely inspired by the music player demoed at Google I/O 2014.
 
 ####Contributing
